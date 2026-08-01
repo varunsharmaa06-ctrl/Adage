@@ -33,7 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  cursor: none;
+  cursor: auto;
 }
 
 @media (max-width: 900px) {
@@ -53,30 +53,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ========================================================== */
 .cursor,
 .cursor-follower {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  will-change: transform;
+  display: none;
 }
-
-.cursor {
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  transition: width 0.2s, height 0.2s, background 0.2s;
-}
-
-.cursor-follower {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(212, 165, 116, 0.5);
-  transition: width 0.3s var(--ease), height 0.3s var(--ease), background 0.3s;
-}
-
-.cursor.grow { width: 12px; height: 12px; }
-.cursor-follower.grow { width: 60px; height: 60px; background: rgba(212, 165, 116, 0.1); }
 
 @media (max-width: 900px) {
   .cursor, .cursor-follower { display: none; }
@@ -149,12 +127,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   right: 0;
   z-index: 100;
   padding: 1.5rem 0;
-  transition: all 0.4s var(--ease);
+  transition: padding 0.4s var(--ease), background-color 0.4s var(--ease), border-color 0.4s var(--ease);
 }
 
 .nav.scrolled {
   padding: 1rem 0;
-  background: rgba(10, 10, 10, 0.85);
+  background: transparent;
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--border);
@@ -470,12 +448,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    HERO
    ========================================================== */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 8rem 0 6rem;
   overflow: hidden;
 }
 
@@ -634,6 +608,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   justify-content: flex-end;
   flex-wrap: wrap;
 }
+
+.hero-banner-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
 
 @media (max-width: 900px) {
   .hero-actions { justify-content: flex-start; }

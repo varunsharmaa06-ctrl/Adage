@@ -10,38 +10,38 @@ window.addEventListener('load', () => {
 });
 
 // ---------- Custom Cursor ----------
-const cursor = document.getElementById('cursor');
-const follower = document.getElementById('cursorFollower');
-let mouseX = 0, mouseY = 0;
-let followerX = 0, followerY = 0;
-
-document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top = mouseY + 'px';
-});
-
-function animateFollower() {
-  followerX += (mouseX - followerX) * 0.15;
-  followerY += (mouseY - followerY) * 0.15;
-  follower.style.left = followerX + 'px';
-  follower.style.top = followerY + 'px';
-  requestAnimationFrame(animateFollower);
-}
-animateFollower();
-
-const growTargets = document.querySelectorAll('a, button, .work-item, .service-card, input, textarea, .filter-btn, .socials a, .testimonial');
-growTargets.forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.classList.add('grow');
-    follower.classList.add('grow');
-  });
-  el.addEventListener('mouseleave', () => {
-    cursor.classList.remove('grow');
-    follower.classList.remove('grow');
-  });
-});
+// const cursor = document.getElementById('cursor');
+// const follower = document.getElementById('cursorFollower');
+// let mouseX = 0, mouseY = 0;
+// let followerX = 0, followerY = 0;
+// 
+// document.addEventListener('mousemove', (e) => {
+//   mouseX = e.clientX;
+//   mouseY = e.clientY;
+//   cursor.style.left = mouseX + 'px';
+//   cursor.style.top = mouseY + 'px';
+// });
+// 
+// function animateFollower() {
+//   followerX += (mouseX - followerX) * 0.15;
+//   followerY += (mouseY - followerY) * 0.15;
+//   follower.style.left = followerX + 'px';
+//   follower.style.top = followerY + 'px';
+//   requestAnimationFrame(animateFollower);
+// }
+// animateFollower();
+// 
+// const growTargets = document.querySelectorAll('a, button, .work-item, .service-card, input, textarea, .filter-btn, .socials a, .testimonial');
+// growTargets.forEach(el => {
+//   el.addEventListener('mouseenter', () => {
+//     cursor.classList.add('grow');
+//     follower.classList.add('grow');
+//   });
+//   el.addEventListener('mouseleave', () => {
+//     cursor.classList.remove('grow');
+//     follower.classList.remove('grow');
+//   });
+// });
 
 // ---------- Nav Scroll ----------
 const nav = document.getElementById('nav');

@@ -12,10 +12,6 @@
 </head>
 <body>
 
-<!-- Custom Cursor -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-follower" id="cursorFollower"></div>
-
 <!-- Loader -->
 <div class="loader" id="loader">
   <div class="loader-inner">
@@ -60,55 +56,7 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-bg">
-    <div class="grain"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-  </div>
-
-  <div class="hero-marquee">
-    <div class="marquee-track">
-      <span>Cinematic Films</span><span>•</span>
-      <span>Commercial Advertising</span><span>•</span>
-      <span>Fashion Editorials</span><span>•</span>
-      <span>Product Storytelling</span><span>•</span>
-      <span>Brand Identity</span><span>•</span>
-      <span>Cinematic Films</span><span>•</span>
-      <span>Commercial Advertising</span><span>•</span>
-      <span>Fashion Editorials</span><span>•</span>
-      <span>Product Storytelling</span><span>•</span>
-      <span>Brand Identity</span><span>•</span>
-    </div>
-  </div>
-
-  <div class="container hero-content">
-    <div class="hero-eyebrow reveal">
-      <span class="dot"></span>
-      <span>Est. 2015 · A Creative Studio</span>
-    </div>
-
-    <h1 class="hero-title">
-      <span class="line reveal-line"><span>Advertising</span></span>
-      <span class="line reveal-line"><span>That Lasts</span></span>
-      <span class="line reveal-line"><span>for <em>Ages.</em></span></span>
-    </h1>
-
-    <div class="hero-bottom">
-      <p class="hero-desc reveal">
-        We craft advertisements, films, and visual experiences that don't just capture attention — they command it. Designed to be remembered for ages.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#work" class="btn btn-primary">
-          <span>View Our Work</span>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 9h16M10 2l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#contact" class="btn btn-ghost">
-          <span>Get in Touch</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
+  <img src="web-banner.jpg.jpeg" alt="AdAge Creative Studio" class="hero-banner-img" />
 </section>
 
 <!-- ABOUT -->
@@ -146,12 +94,7 @@
         <div class="stat-label">Years of Excellence</div>
       </div>
       <div class="stat reveal">
-        <div class="stat-num" data-count="45">0</div>
-        <div class="stat-plus">+</div>
-        <div class="stat-label">Awards Won</div>
-      </div>
-      <div class="stat reveal">
-        <div class="stat-num" data-count="80">0</div>
+        <div class="stat-num" data-count="20">0</div>
         <div class="stat-plus">+</div>
         <div class="stat-label">Happy Brands</div>
       </div>
@@ -613,15 +556,6 @@
           </li>
           <li class="reveal">
             <div class="ci-icon">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
-              <span class="ci-label">Phone</span>
-              <a href="tel:+919785014492">+91 97850 14492</a>
-            </div>
-          </li>
-          <li class="reveal">
-            <div class="ci-icon">
               <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s-8-7-8-13a8 8 0 0116 0c0 6-8 13-8 13z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="9" r="3" stroke="currentColor" stroke-width="1.4"/></svg>
             </div>
             <div>
@@ -642,19 +576,19 @@
       <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/info@adageuniverse.com" method="post" novalidate>
         <div class="field">
           <label>Your Name <span>*</span></label>
-          <input type="text" name="name" required placeholder="John Doe" autocomplete="name" />
+          <input type="text" name="name" required autocomplete="name" />
         </div>
         <div class="field">
           <label>Email Address <span>*</span></label>
-          <input type="email" name="email" required placeholder="john@company.com" autocomplete="email" />
+          <input type="email" name="email" required autocomplete="email" />
         </div>
         <div class="field">
           <label>Company</label>
-          <input type="text" name="company" placeholder="Your company (optional)" autocomplete="organization" />
+          <input type="text" name="company" autocomplete="organization" />
         </div>
         <div class="field">
           <label>Your Message <span>*</span></label>
-          <textarea name="message" rows="5" required placeholder="Tell us about your vision..."></textarea>
+          <textarea name="message" rows="5" required></textarea>
         </div>
         <!-- Spam trap — hidden from real visitors -->
         <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -714,7 +648,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 AdAge. All rights reserved.</span>
+      <span>© 2026 AdAge Universe. All rights reserved.</span>
       <div class="footer-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
