@@ -612,7 +612,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-banner-img {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
 }
 
@@ -834,6 +834,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @media (max-width: 1000px) {
   .work-grid { grid-template-columns: repeat(2, 1fr); }
+ .hero-banner-img
+ {
+    width: 100%;
+    height: 100vh;
+    object-fit: scale-down !important;
+    display: block;
+}
 }
 
 @media (max-width: 600px) {
