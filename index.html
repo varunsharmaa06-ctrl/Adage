@@ -14,7 +14,7 @@
 
 <!-- Loader -->
 <div class="loader" id="loader">
-  <video autoplay muted playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+  <video autoplay muted playsinline style="width: 100%; height: 100%; object-fit: contain; max-width: 90vw; max-height: 90vh;">
     <source src="ADAge V.mp4" type="video/mp4">
   </video>
 </div>
@@ -55,7 +55,10 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <img src="web-banner.jpg.jpeg" alt="AdAge Creative Studio" class="hero-banner-img" />
+  <picture>
+    <source media="(max-width: 900px)" srcset="web-banner-mob.jpg.jpeg">
+    <img src="web-banner.jpg.jpeg" alt="AdAge Creative Studio" class="hero-banner-img" />
+  </picture>
 </section>
 
 <!-- ABOUT -->
